@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcel: The Email Coding Platform</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="nav__logo">
+            <a href="./">
+              <img src="./src/images/logo-light.svg" alt="parcel logo" />
+            </a>
+          </div>
+
+          <div id="navigation">
+            <button id="btnMobile">
+              <span id="hamburger"></span>
+            </button>
+
+            <ul class="menu">
+              <li><a href="#about" class="md">About</a></li>
+              <li><a href="#projects" class="md">Projects</a></li>
+              <li><a href="#contact" class="md">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="container">
+          <a href="./" class="banner__button-1">
+            <p>Parcel is joining forces with Customer.io! Read all about it</p>
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              stroke-width="0"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                fill="#fff"
+                color="#fff"
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+              ></path>
+            </svg>
+          </a>
+          <h1>The Email Coding Platform</h1>
+          <p class="lg">
+            Code, preview, and collaborate using the development platform
+            designed for email. Parcel is the way brands and agencies code
+            high-quality emails.
+          </p>
+          <div>
+            <a href="./" class="banner__button-2">Get started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="companies">
+        <div class="container">
+          <span>Loved by developers and marketers alike</span>
+
+          <div class="companies__wrapper">
+            <img src="./src/images/companies-1.svg" alt="logo" />
+            <img src="./src/images/companies-2.svg" alt="logo" />
+            <img src="./src/images/companies-3.svg" alt="logo" />
+            <img src="./src/images/companies-4.svg" alt="logo" />
+            <img src="./src/images/companies-5.svg" alt="logo" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
