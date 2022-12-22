@@ -43,7 +43,7 @@
 
       <div class="banner">
         <div class="container">
-          <a href="./" class="banner__button-1">
+          <a href="./" class="banner__button-1" data-prevent>
             <p>Parcel is joining forces with Customer.io! Read all about it</p>
             <svg
               viewBox="0 0 24 24"
@@ -127,6 +127,135 @@
               <p class="sm">
                 Parcel provides email-specific autocomplete and hover
                 information using cutting-edge sources like Can I Email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero preview">
+        <div class="container">
+          <p class="sm tip">Live previews</p>
+          <h2>More than <span>just</span> a preview</h2>
+          <p class="md">
+            Every email has tens of thousands of potential rendering previews.
+            That’s a lot to deal with. We’ve taken the idea of a live preview
+            even further to help you stay in the flow, remove uncertainty, and
+            test faster.
+          </p>
+          <a href="./" class="s-links" data-prevent>
+            See all preview tools
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                fill="#a488f6"
+                stroke="#a488f6"
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                stroke-width="0.5"
+              ></path>
+            </svg>
+          </a>
+          <img
+            src="./src/images/live-previews.svg"
+            alt="live preview example image"
+          />
+
+          <div class="highlight">
+            <div class="highlight__wrapper">
+              <div class="icons">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#FFF"
+                  stroke-width="0"
+                  aria-hidden="true"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M19 6h-8a1 1 0 00-1 1v13H4a1 1 0 01-1-1V3a1 1 0 011-1h14a1 1 0 011 1v3zm-6 2h8a1 1 0 011 1v12a1 1 0 01-1 1h-8a1 1 0 01-1-1V9a1 1 0 011-1z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Preview Grid</h3>
+              <p class="sm">
+                View multiple previews of your email simultaneously. Each one
+                can be configured individually so you can test more at once.
+              </p>
+            </div>
+            <div class="highlight__wrapper">
+              <div class="icons">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#FFF"
+                  stroke-width="0"
+                  aria-hidden="true"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M13 1l.001 3.062A8.004 8.004 0 0119.938 11H23v2l-3.062.001a8.004 8.004 0 01-6.937 6.937L13 23h-2v-3.062a8.004 8.004 0 01-6.938-6.937L1 13v-2h3.062A8.004 8.004 0 0111 4.062V1h2zm-1 5a6 6 0 100 12 6 6 0 000-12zm0 4a2 2 0 110 4 2 2 0 010-4z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Inspect Element</h3>
+              <p class="sm">
+                Click on any element in the preview to jump to that exact spot
+                in the code. Spend less time digging through your code.
+              </p>
+            </div>
+            <div class="highlight__wrapper">
+              <div class="icons">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#FFF"
+                  stroke-width="0"
+                  aria-hidden="true"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M11.141 2h1.718c2.014 0 3.094.278 4.072.801a5.452 5.452 0 012.268 2.268c.523.978.801 2.058.801 4.072v5.718c0 2.014-.278 3.094-.801 4.072a5.452 5.452 0 01-2.268 2.268c-.978.523-2.058.801-4.072.801H11.14c-2.014 0-3.094-.278-4.072-.801A5.452 5.452 0 014.8 18.931c-.522-.978-.8-2.058-.8-4.072V9.14c0-2.014.278-3.094.801-4.072A5.452 5.452 0 017.07 2.801C8.047 2.278 9.127 2 11.141 2zM11 6v5h2V6h-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Focus Mode</h3>
+              <p class="sm">
+                Never leave the keyboard as the element you are editing is
+                highlighted and scrolled into view.
+              </p>
+            </div>
+            <div class="highlight__wrapper">
+              <div class="icons">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#FFF"
+                  stroke-width="0"
+                  aria-hidden="true"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 100-10 5 5 0 000 10zm0-2a3 3 0 110-6 3 3 0 010 6z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Impairment Emulation</h3>
+              <p class="sm">
+                Simulate visual impairments to ensure your emails are accessible
+                to all of your subscribers.
               </p>
             </div>
           </div>

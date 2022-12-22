@@ -20,7 +20,6 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
-dropBtn.addEventListener("click", dropdown);
 
 // CLOSE NAV ON CLICK UL -> A
 
@@ -28,4 +27,14 @@ for (const navLink of document.querySelectorAll(".navLink")) {
   navLink.addEventListener("click", () => {
     nav.classList.toggle("active");
   });
+}
+
+// PREVENT LINKS
+
+const preventLinks = document.querySelectorAll("[data-prevent]");
+
+for (let i = 0; i < preventLinks.length; i++) {
+  let links = preventLinks[i];
+
+  links.addEventListener("click", (event) => event.preventDefault());
 }
