@@ -376,6 +376,10 @@ nav .container {
   color: var(--purple);
 }
 
+.preview .s-links {
+  color: var(--purple);
+}
+
 .preview img {
   width: 100%;
   margin-top: 7.6rem;
@@ -392,6 +396,43 @@ nav .container {
   margin-bottom: 0.8rem;
 }
 
-.preview .s-links {
-  color: var(--purple);
+/* ============================== PREVIEW ============================== */
+
+.design h2 {
+  margin-bottom: 1.6rem;
+}
+
+.design h2 span {
+  background-image: var(--text-gradient-orange);
+  color: var(--orange);
+}
+
+.design .s-links {
+  color: var(--orange);
+}
+
+.design .container > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 7.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.design img {
+  position: relative;
+  z-index: 10;
+  width: min(80rem, 100%);
+}
+
+.design .layer {
+  position: absolute;
+  top: 0;
+  left: 7%;
+
+  width: 80%;
+  height: 90%;
+  border-radius: 0.8rem;
+  background-image: var(--gradient-orange);
 }
