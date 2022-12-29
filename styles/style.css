@@ -436,3 +436,38 @@ nav .container {
   border-radius: 0.8rem;
   background-image: var(--gradient-orange);
 }
+
+/* ============================== PREVIEW ============================== */
+
+.transformers h2 {
+  margin-bottom: 1.6rem;
+}
+
+.transformers h2 span {
+  background-image: var(--text-gradient-blue);
+  color: var(--blue);
+}
+
+.transformers .s-links {
+  color: var(--blue);
+}
+
+.divider {
+  display: grid;
+  gap: 4rem;
+  margin-top: 6.4rem;
+}
+
+.transformers .highlight {
+  display: grid;
+  gap: 3.4rem;
+}
+
+.transformers .icons {
+  background-image: var(--text-gradient-blue);
+  margin-bottom: 0.8rem;
+}
+
+.transformers img {
+  width: 100%;
+}
