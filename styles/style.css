@@ -471,3 +471,29 @@ nav .container {
 .transformers img {
   width: 100%;
 }
+
+/* ============================== TESTS ============================== */
+
+.tests .icons {
+  background-image: var(--text-gradient-orange);
+  margin-bottom: 1.6rem;
+}
+
+.tests .icons svg {
+  position: relative;
+  left: -0.1rem;
+}
+
+.tests h2 {
+  margin-bottom: 1.6rem;
+}
+
+.tests h2 span {
+  background-image: var(--text-gradient-orange);
+  color: var(--orange);
+}
+
+.tests img {
+  width: 100%;
+  margin-top: 7.6rem;
+}
