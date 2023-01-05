@@ -25,10 +25,12 @@
   --gradient-blue: linear-gradient(180deg, #47a3ff 0%, #0582ff 100%);
   --gradient-purple: linear-gradient(180deg, #9b7af5 0%, #8350f2 100%);
   --gradient-orange: linear-gradient(180deg, #ff9a23 0%, #ff2f4f 100%);
+  --gradient-pink: linear-gradient(180deg, #ff9a23 0%, #ff2f4f 100%);
 
   --text-gradient-blue: linear-gradient(135deg, #00d1ff 4.51%, #198cff 100%);
   --text-gradient-purple: linear-gradient(135deg, #9b7af5 4.51%, #8350f2 100%);
   --text-gradient-orange: linear-gradient(135deg, #ff9a23 4.51%, #ff2f4f 100%);
+  --text-gradient-pink: linear-gradient(135deg, #8b5ef3 4.51%, #f35eed 100%);
 }
 
 html,
@@ -361,7 +363,7 @@ nav .container {
   gap: 2.4rem;
 }
 
-.highlight__wrapper h3 {
+.code .highlight__wrapper h3 {
   margin-bottom: 0.3rem;
 }
 
@@ -496,4 +498,52 @@ nav .container {
 .tests img {
   width: 100%;
   margin-top: 7.6rem;
+}
+
+/* ============================== VIDEO ============================== */
+
+.video h2 {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.video h2 span {
+  background-image: var(--text-gradient-pink);
+  color: var(--pink);
+}
+
+.video > p {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.video__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4.8rem;
+  margin-bottom: 4.8rem;
+  border-radius: 0.8rem;
+  background-image: var(--text-gradient-pink);
+  overflow-x: hidden;
+}
+
+.video__box {
+  max-width: 59.6rem;
+  border-radius: 0.8rem;
+  overflow-x: hidden;
+}
+
+.video__box video {
+  max-width: 59.6rem;
+}
+
+.video .highlight {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.video .highlight__wrapper h3 {
+  margin-bottom: 0.3rem;
 }
