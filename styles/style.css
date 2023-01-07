@@ -25,12 +25,11 @@
   --gradient-blue: linear-gradient(180deg, #47a3ff 0%, #0582ff 100%);
   --gradient-purple: linear-gradient(180deg, #9b7af5 0%, #8350f2 100%);
   --gradient-orange: linear-gradient(180deg, #ff9a23 0%, #ff2f4f 100%);
-  --gradient-pink: linear-gradient(180deg, #ff9a23 0%, #ff2f4f 100%);
+  --gradient-pink: linear-gradient(135deg, #8b5ef3 4.51%, #f35eed 100%);
 
   --text-gradient-blue: linear-gradient(135deg, #00d1ff 4.51%, #198cff 100%);
   --text-gradient-purple: linear-gradient(135deg, #9b7af5 4.51%, #8350f2 100%);
   --text-gradient-orange: linear-gradient(135deg, #ff9a23 4.51%, #ff2f4f 100%);
-  --text-gradient-pink: linear-gradient(135deg, #8b5ef3 4.51%, #f35eed 100%);
 }
 
 html,
@@ -398,7 +397,7 @@ nav .container {
   margin-bottom: 0.8rem;
 }
 
-/* ============================== PREVIEW ============================== */
+/* ============================== DESIGN ============================== */
 
 .design h2 {
   margin-bottom: 1.6rem;
@@ -439,7 +438,7 @@ nav .container {
   background-image: var(--gradient-orange);
 }
 
-/* ============================== PREVIEW ============================== */
+/* ============================== TRANSFORMERS ============================== */
 
 .transformers h2 {
   margin-bottom: 1.6rem;
@@ -466,7 +465,7 @@ nav .container {
 }
 
 .transformers .icons {
-  background-image: var(--text-gradient-blue);
+  background-image: var(--gradient-blue);
   margin-bottom: 0.8rem;
 }
 
@@ -508,16 +507,16 @@ nav .container {
 }
 
 .video h2 span {
-  background-image: var(--text-gradient-pink);
+  background-image: var(--gradient-pink);
   color: var(--pink);
 }
 
-.video > p {
+.video p.md {
   text-align: center;
   margin-bottom: 6.4rem;
 }
 
-.video__wrapper {
+.video .video__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,17 +524,17 @@ nav .container {
   padding: 4.8rem;
   margin-bottom: 4.8rem;
   border-radius: 0.8rem;
-  background-image: var(--text-gradient-pink);
-  overflow-x: hidden;
+  background-image: var(--gradient-pink);
 }
 
-.video__box {
+.video .video__box {
   max-width: 59.6rem;
+  height: 35.2rem;
   border-radius: 0.8rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.video__box video {
+.video .video__box video {
   max-width: 59.6rem;
 }
 
@@ -546,4 +545,73 @@ nav .container {
 
 .video .highlight__wrapper h3 {
   margin-bottom: 0.3rem;
+}
+
+/* ============================== TEAMS ============================== */
+
+.teams h2 {
+  margin-bottom: 1.6rem;
+}
+
+.teams h2 span {
+  background-image: var(--text-gradient-blue);
+  color: var(--blue);
+}
+
+.teams .s-links {
+  color: var(--blue);
+}
+
+.divider {
+  display: grid;
+  gap: 4rem;
+  margin-top: 6.4rem;
+}
+
+.teams .highlight {
+  display: grid;
+  gap: 3.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.teams .icons {
+  background-image: var(--gradient-blue);
+  margin-bottom: 0.8rem;
+}
+
+.teams h3 {
+  margin-bottom: 0.8rem;
+}
+
+.teams .video__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.teams .video__layer {
+  position: absolute;
+  inset: 0;
+
+  width: min(50rem, 100%);
+  height: 65%;
+  margin: auto;
+  border-radius: 0.8rem;
+  background-image: var(--text-gradient-blue);
+  transform: rotate(6deg);
+}
+
+.teams .video__box {
+  position: relative;
+  z-index: 10;
+
+  max-width: 48rem;
+  max-height: 27rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.teams .video__box video {
+  max-width: 100%;
 }
