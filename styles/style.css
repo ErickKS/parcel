@@ -156,6 +156,20 @@ h2 span {
   transform: translate3d(0.1rem, 0, 0);
 }
 
+.button-get-started {
+  display: block;
+
+  max-width: 38.4rem;
+  background-image: var(--gradient-blue);
+  padding: 1.6rem 2.4rem;
+  margin-inline: auto;
+  border-radius: 0.8rem;
+
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+
 /* ============================== HEADER ============================== */
 
 nav {
@@ -290,20 +304,6 @@ nav .container {
 
 .banner p.lg {
   margin-bottom: 4rem;
-}
-
-.banner__button-2 {
-  display: block;
-
-  max-width: 38.4rem;
-  background-image: var(--gradient-blue);
-  padding: 1.6rem 2.4rem;
-  margin-inline: auto;
-  border-radius: 0.8rem;
-
-  font-size: 1.6rem;
-  line-height: 1.6rem;
-  font-weight: 600;
 }
 
 /* ============================== COMPANIES ============================== */
@@ -648,5 +648,29 @@ nav .container {
 
 .features__box p {
   color: var(--white-200);
-  line-height: 2.4rem;
+}
+
+/* ============================== TRY ============================== */
+
+.try .line {
+  padding-top: 6.4rem;
+  border-top: 1px solid var(--gray-100);
+}
+
+.try h2 {
+  margin-bottom: 0.8rem;
+}
+
+.try p {
+  margin-bottom: 2.4rem;
+}
+
+.try__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.try .button-get-started {
+  margin-inline: initial;
+  text-align: center;
 }
