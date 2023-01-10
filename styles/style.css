@@ -25,7 +25,7 @@
   --gradient-blue: linear-gradient(180deg, #47a3ff 0%, #0582ff 100%);
   --gradient-purple: linear-gradient(180deg, #9b7af5 0%, #8350f2 100%);
   --gradient-orange: linear-gradient(180deg, #ff9a23 0%, #ff2f4f 100%);
-  --gradient-pink: linear-gradient(135deg, #8b5ef3 4.51%, #f35eed 100%);
+  --gradient-pink: linear-gradient(125deg, #f35eed 4.51%, #8b5ef3 100%);
 
   --text-gradient-blue: linear-gradient(135deg, #00d1ff 4.51%, #198cff 100%);
   --text-gradient-purple: linear-gradient(135deg, #9b7af5 4.51%, #8350f2 100%);
@@ -167,7 +167,7 @@ nav {
 
   width: 100%;
   height: 5.6rem;
-  border-bottom: 0.1rem solid var(--gray-200);
+  border-bottom: 0.1rem solid var(-- -200);
   background-color: rgba(13, 17, 23, 1);
 }
 
@@ -524,7 +524,7 @@ nav .container {
   padding: 4.8rem;
   margin-bottom: 4.8rem;
   border-radius: 0.8rem;
-  background-image: var(--gradient-pink);
+  background-image: linear-gradient(135deg, #8b5ef3 4.51%, #f35eed 100%);
 }
 
 .video .video__box {
@@ -614,4 +614,39 @@ nav .container {
 
 .teams .video__box video {
   max-width: 100%;
+}
+
+/* ============================== FEATURES ============================== */
+
+.features h2 {
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.features h2 span {
+  background-image: var(--gradient-pink);
+  color: var(--pink);
+}
+
+.features__wrapper {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.features__box {
+  padding: 2.4rem;
+  background-color: var(--secondary);
+  border: 0.1rem solid rgb(43, 50, 62);
+  border-radius: 0.4rem;
+}
+
+.features__box h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.features__box p {
+  color: var(--white-200);
+  line-height: 2.4rem;
 }
