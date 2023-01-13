@@ -19,7 +19,7 @@
   --gray-200: hsl(216, 19%, 15%);
 
   --white-100: hsl(216, 100%, 99%);
-  --white-200: hsl(213, 31%, 85%);
+  --white-200: hsl(213, 32%, 85%);
   --white-300: hsl(214, 21%, 68%);
 
   --gradient-blue: linear-gradient(180deg, #47a3ff 0%, #0582ff 100%);
@@ -673,4 +673,94 @@ nav .container {
 .try .button-get-started {
   margin-inline: initial;
   text-align: center;
+}
+
+/* ============================== TRY ============================== */
+
+footer {
+  padding-top: 3.2rem;
+  margin-top: 9.6rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+footer .resume {
+  margin-bottom: 2.4rem;
+}
+
+footer .resume img {
+  height: 3.2rem;
+}
+
+footer .resume p {
+  display: none;
+
+  margin-left: 4rem;
+  margin-top: 1.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #e7eff9;
+}
+
+footer .resume p a {
+  text-decoration: underline;
+}
+
+footer .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.8rem;
+}
+
+footer .links div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+footer .links h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  color: var(--white-100);
+}
+
+footer .links a {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: var(--white-200);
+}
+
+.ref {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.2rem;
+
+  padding-block: 3.6rem 2rem;
+
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.ref span {
+  color: var(--white-100);
+}
+
+.ref a {
+  color: #9dacbf;
+}
+
+.ref__copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.ref__social {
+  display: flex;
+  gap: 2rem;
+}
+
+.ref__social a {
+  color: var(--white-200);
 }
