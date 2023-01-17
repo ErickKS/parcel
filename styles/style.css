@@ -127,6 +127,10 @@ h2 span {
 .hero {
   margin-top: 12.8rem;
 }
+.hero p ~ h2,
+.hero h2 ~ p {
+  max-width: 76.8rem;
+}
 
 .icons {
   display: flex;
@@ -528,6 +532,7 @@ nav .container {
 }
 
 .video p.md {
+  max-width: initial;
   text-align: center;
   margin-bottom: 6.4rem;
 }
@@ -665,13 +670,10 @@ nav .container {
   margin-bottom: 0.8rem;
 }
 
-.try p {
-  margin-bottom: 2.4rem;
-}
-
 .try__wrapper {
   display: flex;
   flex-direction: column;
+  gap: 2.4rem;
 }
 
 .try .button-get-started {
@@ -740,7 +742,7 @@ footer .links a {
   flex-direction: column-reverse;
   gap: 1.2rem;
 
-  padding-block: 3.6rem 2rem;
+  padding-block: 4.8rem 2rem;
 
   font-size: 1.3rem;
   line-height: 1.6rem;
@@ -816,6 +818,11 @@ footer .links a {
   .features__wrapper {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* ========== FOOTER ========== */
+  footer .links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 768px) {
@@ -854,5 +861,37 @@ footer .links a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* ========== FOOTER ========== */
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: 44.8rem 1fr;
+  }
+
+  footer .resume {
+    max-width: 32rem;
+  }
+
+  footer .resume p {
+    display: block;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  .ref {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ref__copyright {
+    flex-direction: row;
+    gap: 2.4rem;
   }
 }
