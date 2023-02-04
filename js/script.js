@@ -19,14 +19,6 @@ function toggleMenu(event) {
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
-// CLOSE NAV ON CLICK UL -> A
-
-for (const navLink of document.querySelectorAll(".navLink")) {
-  navLink.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-}
-
 // PREVENT LINKS
 
 const preventLinks = document.querySelectorAll("[data-prevent]");
