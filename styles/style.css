@@ -366,6 +366,30 @@ nav .container {
   line-height: 2rem;
 }
 
+.menu-mobile li:last-of-type {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+}
+
+.menu-mobile li:last-of-type a {
+  font-size: 1.4rem;
+  min-width: 9.2rem;
+  text-align: center;
+  padding: 0.85rem 1.2rem;
+  border-radius: 0.2rem;
+  background-color: var(--gray-200);
+  color: var(--white-100);
+}
+
+.menu-mobile li:last-of-type a:last-of-type {
+  background-color: var(--blue);
+}
+.menu-mobile li:last-of-type a:last-of-type:hover {
+  color: #e7eff9;
+  background-color: #57abff;
+}
+
 #navigation button {
   display: flex;
 
