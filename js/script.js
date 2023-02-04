@@ -7,11 +7,9 @@ function toggleMenu(event) {
   if (event.type === "touchstart") event.preventDefault();
   nav.classList.toggle("active");
 
-  document.documentElement.onclick = function (event) {
-    if (event.target !== dropBtn && event.target !== dropList) {
-      if (window.screen.width <= 990) {
-        dropBtn.classList.remove("active");
-        dropList.classList.remove("active");
+  window.onclick = (event) => {
+    if (!event.target.matches(".nav")) {
+      if (window.screen.width <= 780) {
         nav.classList.remove("active");
       }
     }

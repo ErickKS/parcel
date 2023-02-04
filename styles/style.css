@@ -320,6 +320,13 @@ nav .container {
   padding-top: 0;
 }
 
+.solutions__wrapper > div:not(.aside-line) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 0;
+}
+
 .solutions__wrapper span {
   font-weight: 500;
   color: var(--white-200);
@@ -424,11 +431,22 @@ nav .container {
 
 .dropdown {
   position: fixed;
-  margin-top: 2.4rem;
+  margin-top: 2.3rem;
+  z-index: 10;
 
   background-color: var(--primary);
   border: 0.1rem solid var(--border);
   border-radius: 0.2rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown-trigger:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown h4 {
@@ -580,7 +598,7 @@ nav .container {
 .account-btns {
   display: flex;
   gap: 1.6rem;
-  padding-inline: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 .account-btns a {
@@ -747,12 +765,12 @@ nav .container {
 
 .design img {
   position: relative;
-  z-index: 10;
   width: min(80rem, 100%);
 }
 
 .design .layer {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 7%;
 
@@ -901,21 +919,8 @@ nav .container {
   position: relative;
 }
 
-.teams .video__layer {
-  position: absolute;
-  inset: 0;
-
-  width: min(50rem, 100%);
-  height: 65%;
-  margin: auto;
-  border-radius: 0.8rem;
-  background-image: var(--text-gradient-blue);
-  transform: rotate(6deg);
-}
-
 .teams .video__box {
   position: relative;
-  z-index: 10;
 
   max-width: 48rem;
   max-height: 27rem;
@@ -925,6 +930,19 @@ nav .container {
 
 .teams .video__box video {
   max-width: 100%;
+}
+
+.teams .video__layer {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  width: min(50rem, 100%);
+  height: 65%;
+  margin: auto;
+  border-radius: 0.8rem;
+  background-image: var(--text-gradient-blue);
+  transform: rotate(6deg);
 }
 
 /* ============================== FEATURES ============================== */
@@ -1135,7 +1153,7 @@ footer .links a {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   h2 {
     font-size: 4.8rem;
   }
@@ -1185,6 +1203,39 @@ footer .links a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dropdown.type-1 {
+    flex-direction: column;
+  }
+
+  .dropdown.type-1 > div {
+    width: 100%;
+  }
+
+  .dropdown.type-1 aside {
+    width: 100%;
+    padding-inline: 3.2rem;
+  }
+
+  .dropdown.type-1 aside h4 {
+    display: none;
+  }
+
+  .solutions__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+
+  .solutions__wrapper > div:not(.aside-line) {
+    padding-left: 58px;
+  }
+
+  .aside-line {
+    display: none;
   }
 }
 
