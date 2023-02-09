@@ -7,6 +7,7 @@
 ### &nbsp; N O T E S
 - This project is entirely educational
 - I'm practicing my skills with HTML, CSS and JS
+- The date of my clone refers to the version of 09/Feb/2022
 
 <br>
 
