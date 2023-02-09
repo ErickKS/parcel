@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>⚜️ P A R C E L ⚜️<br><a href="https://erickks.github.io/parcel/">live demo</></h2>
+    <h2>⚜️ P A R C E L &nbsp; C L O N E ⚜️<br><a href="https://erickks.github.io/parcel/">live demo</></h2>
 </div>
 
 <br>
