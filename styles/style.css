@@ -178,6 +178,11 @@ h2 span {
   font-size: 1.6rem;
   line-height: 1.6rem;
   font-weight: 600;
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-get-started:hover {
+  background-image: linear-gradient(180deg, #47a3ff 0%, #389bff 100%);
 }
 
 .input__wrapper input {
@@ -1246,6 +1251,7 @@ footer .links a {
     padding: 0.8rem 1.6rem;
     background-color: transparent;
     border: none;
+    cursor: text;
 
     font-size: 1.6rem;
     font-weight: 500;
@@ -1253,6 +1259,10 @@ footer .links a {
   }
   .input__wrapper input::placeholder {
     color: #7b8a9d;
+  }
+
+  .input__wrapper:focus-within {
+    border-color: rgba(26, 140, 255, 0.75);
   }
 
   .input__wrapper a {
